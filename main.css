@@ -164,6 +164,19 @@ font-size : 13px;
 text-align : center;
 padding : 3px;
 }
+#shoutboxkekw {
+float : left;
+z-index: 50;
+position:fixed;
+top:0;
+bottom:30;
+left:0;
+height: auto;
+overflow : visible;
+}
+#gownochomik {
+    
+}
 .errormain {
 padding : 0 5px;
 padding-bottom : 25px;
