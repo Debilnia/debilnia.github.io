@@ -78,7 +78,7 @@
         <script>
             function kolorki() {
                 var ipColor = Math.floor(Math.random()*16777215).toString(16);
-                var ipBackground = Math.floor(Math.random()*16777215).toString(16);
+                //var ipBackground = Math.floor(Math.random()*16777215).toString(16);
                 document.querySelector('#ip a').style.color = '#' + ipColor;
                 //document.getElementById('ip').style.backgroundColor = '#' + ipBackground;
                 setTimeout("kolorki()", 300);
@@ -97,7 +97,6 @@
         <br />
         <iframe src="disco/html/index.html" width="600" height="300" id="szczuriframe">
         </iframe>
-        <br />
         <audio autoplay loop>
             <source src="music/songzgon.mp3" type="audio/mp3" />
         </audio>
