@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Fun Fact'y!!!!!!!!!!!!</title>
+        <meta name="description" content="Fun Fact'y które nie są Fun">
+        <link href="music/favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+    <center>
+    <h3>Fun Facty które nie są fun, i całkowicie nic nie zmienią w twoim życiu :D</h3>
+    Liczba ciekawostek: <div id="numbr"></div><br>
+    <button id="hm">Kliknij po fun fact'a</button><br>
+    <div id="tekst"></div>
+    </center>
+    <script>
+    var i = 0;
+    var liczbaf = 20;
+    document.getElementById('numbr').innerHTML = liczbaf
+    document.getElementById('hm').addEventListener('click', () => document.getElementById('tekst').innerHTML = ["Potworniak to nowotwór który może mieć włosy, zęby, a nawet oczy", "Możesz zmieszać amoniak i wybielacz by wytworzyć gaz chloraminowy", "Jeżeli wlejesz gaz propanowy na styropian, wytworzysz napalm", "Większa szansa jest że przeżyjesz postrzał w głowe niż wścieklizne", "Około 40% morderstw jest nie rozwiązanych", "Biegunka zabija 2195 osób codziennie, więcej niż AIDS i malaria razem wzięte", "Można się pozbyć czkawki po przez włożenie palca w dupe", "Każdy okręt ma kostnice", "Twoje kości są mokre", "Całe uniwersum może zniknąć w ciągu ułamka sekundy", "Średnia ilość kończyn każdego człowieka wynosi mniej niż 2", "Orki mogą oskurować pingwiny", "Jedi jest oficjalną religią 70 tys. Australijczyków", "L-cysteina używana do wypieku pieczywa jest pozyskiwana z ludzkich włosów", "Sernik został wymyślony w starożytnej Grecji. Podawano go sportowcom podczas Igrzysk Olimpijskich", "Wdychanie powietrza w Mumbaju tylko przez jeden dzień jest równe wypaleniu 2,5 paczek papierosów", "Podczas francuskiego pocałunku, partnerzy wymieniają 250 typów bakterii", "CIA zastanawiało się nad zrzucaniem nad Rosję kondomów w rozmiarze XL opisanych jako M. Miało to wpłynąć negatywnie na morale rosyjskiej armii", "Każdy lekarz (także dentysta) może legalnie wykonać operację plastyczną", "Dziesięć na dziesięć osób umiera. Nie bierz życia zbyt poważnie"][Math.floor(Math.random() * liczbaf)]);
+    </script>
+            
+    </body>
+</html>
