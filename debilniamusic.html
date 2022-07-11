@@ -1,28 +1,74 @@
+<!DOCTYPE html>
 <html>
-<style>
-	#napis{
-		color:#ffffff; font-family:Comic Sans MS; font-size: 20;
-	}
-	#copyright{
-		font-family:Arial; color:#ffffff; position:absolute; margin-left: auto; margin-right: auto; left:0; right:0;
-	}
-</style>    
-    <body>
-        <center>
-            <body style="background-image: url('chomik.png'); overflow-y: auto;">
-                <em>Chomikuj Music player.</em>
-                <p id="napis">Zgon przy porodzie</p>       
-                <audio src="music/songzgon.mp3" controls></audio>
-                <p id="napis">Chuj wersja 10</p>
-                <audio src="music/songcock.mp3" controls></audio>
-                <p id="napis">Aezakmi</p>       
-                <audio src="music/songaezakmi.mp3" controls></audio>
-                <p id="napis">Hotel Motel</p>       
-                <audio src="music/songhotel.mp3" controls></audio>
-                <p id="napis">Gazolina</p>       
-                <audio src="music/songgasolina.mp3" controls></audio>
-                <p id="napis">SUKI SUKI SUKI SUKI SUKI</p>       
-                <audio src="music/songsuki.mp3" controls></audio>
-        </center>    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>
+            Chomikuj Music Player&trade;
+        </title>
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-image: url('./assets/imgs/chomik.png');
+                text-align: center;
+                font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
+            }
+
+            h1 {
+                font-style: italic;
+                font-size: 40px;
+                color: black;
+                text-shadow: 3px 3px 2px black;
+            }
+
+            .songTitle {
+                color: #ffffff; 
+                font-size: 20px;
+                text-shadow: 2px 2px 5px black;
+            }
+        </style>
+        <script type="text/javascript">
+            function titleColor() {
+                var h1Color = Math.floor(Math.random()*16777215).toString(16);
+                document.getElementsByTagName('h1')[0].style.color = "#" + h1Color;
+                setTimeout('titleColor()', 1000);
+            }
+        </script>
+    </head>  
+    <body onload="titleColor();">
+        <h1>
+            Chomikuj Music Player&trade;
+        </h1>
+        <p class="songTitle">
+            Zgon przy porodzie
+        </p>       
+        <audio src="./assets/music/songzgon.mp3" controls>
+        </audio>
+        <p class="songTitle">
+            Chuj wersja 10
+        </p>
+        <audio src="./assets/music/songcock.mp3" controls>
+        </audio>
+        <p class="songTitle">
+            aezakmi
+        </p>       
+        <audio src="./assets/music/songaezakmi.mp3" controls>
+        </audio>
+        <p class="songTitle">
+            Hotel Motel
+        </p>       
+        <audio src="./assets/music/songhotel.mp3" controls>
+        </audio>
+        <p class="songTitle">
+            Gazolina
+        </p>       
+        <audio src="./assets/music/songgasolina.mp3" controls>
+        </audio>
+        <p class="songTitle">
+            SUKI SUKI SUKI SUKI SUKI
+        </p>       
+        <audio src="./assets/music/songsuki.mp3" controls>
+        </audio> 
     </body>
 </html>

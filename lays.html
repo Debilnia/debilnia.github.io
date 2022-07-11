@@ -11,7 +11,8 @@
         <meta property="og:video:width" content="449" />
         <meta property="og:video:height" content="498" />
         <meta property="og:video:url" content="https://cdn.discordapp.com/attachments/748816561623793688/992463207262343168/Fristajlo_2-1.mp4" />
-        <link href="music/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             @keyframes szczur {
                 from {
@@ -40,7 +41,7 @@
                 text-align: center;
                 animation: 3s szczur infinite alternate;
                 padding: 20px;
-                font-family: "Brush Script MT", sans-serif;
+                font-family: sans-serif;
             }
 
             #szczurtitle {
@@ -54,11 +55,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 animation: 1s ip infinite alternate;
-                /*
-                background-color: white;
-                border: 7px solid black;
-                border-radius: 6px;
-                */
             }
 
             #ip a {
@@ -78,9 +74,7 @@
         <script>
             function kolorki() {
                 var ipColor = Math.floor(Math.random()*16777215).toString(16);
-                //var ipBackground = Math.floor(Math.random()*16777215).toString(16);
                 document.querySelector('#ip a').style.color = '#' + ipColor;
-                //document.getElementById('ip').style.backgroundColor = '#' + ipBackground;
                 setTimeout("kolorki()", 300);
              }
         </script>
@@ -95,10 +89,10 @@
             </script>
         </p>
         <br />
-        <iframe src="disco/html/index.html" width="600" height="300" id="szczuriframe">
+        <iframe src="./assets/disco/html/index.html" width="600" height="300" id="szczuriframe">
         </iframe>
         <audio autoplay loop>
-            <source src="music/songzgon.mp3" type="audio/mp3" />
+            <source src="./assets/music/songzgon.mp3" type="audio/mpeg" />
         </audio>
     </body>
 </html>
