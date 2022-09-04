@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>
+            Kabel USB typu C
+        </title>
+        <meta name="description" content="Kabel USB typu C">
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="usb">Wait 10 seconds for usb type c</div>
+        <script>
+            function usbtypec() {
+            document.getElementById('usb').innerHTML = '<center><img src="./assets/imgs/usb.gif" alt="USB type C"></center>'
+        }
+            function liczenie() {
+                console.log("chuj!");
+                let i = 10;
+                function theTimer() {
+                    if (i > 1) {
+                        document.getElementById("usb").innerHTML = "Wait " + i + " seconds for USB type C";
+                        console.log(i);
+                        i--
+                    }
+                    if (i == 1) {
+                        document.getElementById("usb").innerHTML = "Wait " + i + " second for USB type C";
+                        console.log(i);
+                        i--
+                    }
+                    setTimeout(theTimer,1000);
+                }
+                theTimer();
+            }
+        setTimeout("usbtypec()", 10000)
+        liczenie()
+        </script>
+    </body>
+</html>
+            
