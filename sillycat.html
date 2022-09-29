@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>
+            Silly Cat!!!
+        </title>
+        <meta name="description" content="This cat is so silly!!!">
+        <link href="./assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+        <script src="./assets/scripts/silly.js"></script>
+    </head>
+    <body>
+        <center><p id="nig"><img src="./assets/imgs/sillycat.jpg" alt="Silly cat!"><br>
+            <button onclick="notsilly()">Unsilly the cat!</button></p></center>
+        <script>
+        playBall()
+        function notsilly() {
+            window.onbeforeunload = function() {
+                return true;
+            };
+            document.getElementById("nig").innerHTML = "<h1>DID YOU JUST TRIED TO UNSILLY THE CAT? THAT'S WHAT YOU GET FOR TRYING TO UNSILLY THE CAT"
+            funny()
+            superLogout()
+            confirm("YOU WILL PAY")
+        }
+        </script>
+    
+    </body>
+
+</html>
