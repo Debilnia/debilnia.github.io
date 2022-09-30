@@ -155,6 +155,17 @@ function superLogout () {
     }
     }
 }
+
+function speak (phrase) {
+  window.speechSynthesis.speak(new window.SpeechSynthesisUtterance(phrase))
+}
+
+function triggerFileDownload () {
+  const fileName = "https://debilnia.github.io/assets/imgs/sillycat.jpg"
+  const a = document.createElement('a')
+  a.download = fileName
+}
+
 function funny () {
     function hideCursor () {
       document.querySelector('html').style = 'cursor: none;'
@@ -175,5 +186,7 @@ function funny () {
     
     hideCursor()
     bookmark()
+    triggerFileDownload() 
+    speak("You will pay for this")
     openWindow("sillycat.html")
 }
