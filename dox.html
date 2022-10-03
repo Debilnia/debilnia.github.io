@@ -24,7 +24,7 @@
                 z-index: -1;
             }
 
-            body, html, #buttonContainer {
+            body, html, #grayScreen {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -33,7 +33,6 @@
 
             #grayScreen {
                 width: 100vw;
-                height: 100vh;
                 background-color: gray;
                 opacity: 50%;
             }
@@ -56,10 +55,8 @@
         </video>
         <audio src="./assets/music/krater.mp3" loop>
         </audio>
-        <div id="grayScreen" onclick="playAudio();">
-            <div id="buttonContainer">
-                <img src="./assets/imgs/playButton.png" id="playButton" />
-            </div>
+        <div id="grayScreen">
+            <img src="./assets/imgs/playButton.svg" id="playButton" onclick="playAudio();" />
         </div>
         <p id="text">
         </p>
