@@ -24,22 +24,11 @@
                 z-index: -1;
             }
 
-            body, html, #grayScreen {
+            body,html {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-            }
-
-            #grayScreen {
-                width: 100vw;
-                background-color: gray;
-                opacity: 50%;
-            }
-
-            #playButton {
-                width: 30vh;
-                height: 30vh;
             }
 
             #text {
@@ -51,13 +40,10 @@
         </style>
     </head>
     <body>
-        <video id="kraterbg" src="./assets/video/krater.mp4" muted loop>
+        <video id="kraterbg" src="./assets/video/krater.mp4" autoplay muted loop>
         </video>
-        <audio src="./assets/music/krater.mp3" loop>
+        <audio src="./assets/music/krater.mp3" autoplay loop>
         </audio>
-        <div id="grayScreen">
-            <img src="./assets/imgs/playButton.svg" id="playButton" onclick="playAudio();" />
-        </div>
         <p id="text">
         </p>
         <script type="text/javascript">
@@ -85,15 +71,9 @@
                     text = "Error: " + err;
                     console.log("Error: " + err);
                 }
-            }
-            getIP();
-
-            function playAudio() {
-                document.getElementById('grayScreen').remove();
-                document.getElementsByTagName('audio')[0].play();
-                document.getElementById('kraterbg').play();
                 typeText();
             }
+            getIP();
         </script>
     </body>
 </html>
